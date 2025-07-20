@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Xottik - Créateur Nostalgie</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #111, #1a1a1a);
+      color: #fff;
+      line-height: 1.6;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #ff9100;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      color: #ff9100;
+      margin-bottom: 20px;
+    }
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin: 30px 0;
+    }
+
+    .socials a {
+      color: #ff9100;
+      font-size: 2.5rem;
+      transition: 0.3s;
+    }
+
+    .socials a:hover {
+      color: #ffc107;
+      transform: scale(1.1);
+    }
+
+    .email-box {
+      background: #222;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+      font-weight: 500;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(255,145,0,0.2);
+    }
+
+    .email-box strong {
+      color: #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #888;
+      font-size: 0.9rem;
+    }
+
+    .contact-info {
+      background: #1c1c1c;
+      border-left: 5px solid #ff9100;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .contact-info p {
+      margin-bottom: 15px;
+    }
+
+    .contact-info ul {
+      padding-left: 20px;
+    }
+
+    .contact-info ul li {
+      list-style: square;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Salut, moi c’est Flawzenn 👋</h1>
+    <p>
+      Je suis un créateur passionné par la "nostalgie", les univers rétro, les musiques qui rappellent l’enfance et les vibes d’autrefois.  
+      Sur ma chaîne et mes réseaux, je partage ce que j’aime : vidéos ambiance, contenus stylés, musiques oubliées et moments chill.
+    </p>
+  </header>
+
+  <section>
+    <h2>🌐 Mes réseaux</h2>
+    <p>Tu peux me retrouver ici, que ce soit pour découvrir mon univers ou rejoindre la commu :</p>
+    <div class="socials">
+      <a href="https://www.youtube.com/channel/UC1tGrq3RKb7xQowk2ObIedA" target="_blank" title="YouTube"><i class='bx bxl-youtube'></i></a>
+      <a href="https://discord.com/invite/KkMfBTKhHa" target="_blank" title="Discord"><i class='bx bxl-discord-alt'></i></a>
+    </div>
+  </section>
+
+  <section>
+    <h2>📢 À propos de moi</h2>
+    <p>
+      Je fais tout moi-même : montage, son, visuels, concept.  
+      J'adore recréer des ambiances d'une époque passée, que ce soit à travers des extraits, des sons old-school, ou des références pop culture.
+    </p>
+    <p>
+      Je suis aussi actif sur Discord, où je construis une petite communauté autour de la nostalgie, la créativité et l'entraide.
+    </p>
+  </section>
+
+  <section>
+    <h2>📬 Contact</h2>
+    <div class="contact-info">
+      <p>Tu veux me contacter pour une collaboration, une idée, ou un vrai projet pro ? Cool ! Voici ce que tu dois savoir :</p>
+      <ul>
+        <li>⛔ <strong>Merci de ne pas m’envoyer de DM inutiles</strong> (ex : “salut ça va ?”, “répond stp”, etc.)</li>
+        <li>✅ Je lis tous les mails sérieux avec plaisir</li>
+        <li>💼 Je suis ouvert aux projets liés à la musique, au montage, à la création de contenu ou même au dev</li>
+        <li>📣 Si tu veux devenir modérateur sur le serveur Discord, envoie-moi un vrai mail avec un minimum de présentation</li>
+      </ul>
+    </div>
+    <div class="email-box">
+      📩 Mail pro : <strong>xottikpro@gmail.com</strong>
+    </div>
+  </section>
+
+  <footer>
+  <p>© 2025 Flawzenn – Tous droits réservés. Site fait avec ❤️ et nostalgie.</p>
+  <div style="margin-top: 20px;">
+    <label for="lang-select" style="color:#aaa; font-size: 0.95rem;">🌍 Changer la langue :</label>
+    <select id="lang-select" onchange="changeLanguage()" style="margin-left: 10px; padding: 6px 12px; border-radius: 6px; background: #222; color: #fff; border: 1px solid #444;">
+      <option value="index.html" selected>Français</option>
+      <option value="../index.html">Anglais</option>
+      <option value="index.html">Espagnol</option>
+    </select>
+  </div>
+</footer>
+<script>
+  function changeLanguage() {
+    const select = document.getElementById("lang-select");
+    const target = select.value;
+    window.location.href = target;
+  }
+</script>
+</body>
+</html>

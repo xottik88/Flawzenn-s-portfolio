@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Xottik - Nostalgia Creator</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #111, #1a1a1a);
+      color: #fff;
+      line-height: 1.6;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #ff9100;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      color: #ff9100;
+      margin-bottom: 20px;
+    }
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin: 30px 0;
+    }
+
+    .socials a {
+      color: #ff9100;
+      font-size: 2.5rem;
+      transition: 0.3s;
+    }
+
+    .socials a:hover {
+      color: #ffc107;
+      transform: scale(1.1);
+    }
+
+    .email-box {
+      background: #222;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+      font-weight: 500;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(255,145,0,0.2);
+    }
+
+    .email-box strong {
+      color: #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #888;
+      font-size: 0.9rem;
+    }
+
+    .contact-info {
+      background: #1c1c1c;
+      border-left: 5px solid #ff9100;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .contact-info p {
+      margin-bottom: 15px;
+    }
+
+    .contact-info ul {
+      padding-left: 20px;
+    }
+
+    .contact-info ul li {
+      list-style: square;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hey, I’m Flawzenn 👋</h1>
+    <p>
+      I’m a creator passionate about "nostalgia", retro vibes, childhood memories, and chill sounds from the past.  
+      On my channel and socials, I share what I love: aesthetic videos, forgotten music, and relaxing content.
+    </p>
+  </header>
+
+  <section>
+    <h2>🌐 My Socials</h2>
+    <p>You can find me here to discover my world or join the community:</p>
+    <div class="socials">
+      <a href="https://www.youtube.com/channel/UC1tGrq3RKb7xQowk2ObIedA" target="_blank" title="YouTube"><i class='bx bxl-youtube'></i></a>
+      <a href="https://discord.com/invite/KkMfBTKhHa" target="_blank" title="Discord"><i class='bx bxl-discord-alt'></i></a>
+    </div>
+  </section>
+
+  <section>
+    <h2>📢 About Me</h2>
+    <p>
+      I do everything myself: editing, audio, visuals, and concepts.  
+      I love recreating past-era atmospheres using clips, old-school sounds, or pop culture references.
+    </p>
+    <p>
+      I’m also active on Discord, where I’m building a small community around nostalgia, creativity, and good vibes.
+    </p>
+  </section>
+
+  <section>
+    <h2>📬 Contact</h2>
+    <div class="contact-info">
+      <p>Want to contact me for a collab, idea, or professional project? Cool! Here’s what you need to know:</p>
+      <ul>
+        <li>⛔ <strong>Please don’t send useless DMs</strong> (e.g., “hi”, “reply pls”, etc.)</li>
+        <li>✅ I gladly read all serious emails</li>
+        <li>💼 I’m open to projects related to music, editing, content creation, or even dev</li>
+        <li>📣 If you want to become a Discord mod, send me a proper email with a short intro</li>
+      </ul>
+    </div>
+    <div class="email-box">
+      📩 Business Email: <strong>xottikpro@gmail.com</strong>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Flawzenn – All rights reserved. Made with ❤️ and nostalgia.</p>
+    <div style="margin-top: 20px;">
+      <label for="lang-select" style="color:#aaa; font-size: 0.95rem;">🌍 Change language:</label>
+      <select id="lang-select" onchange="changeLanguage()" style="margin-left: 10px; padding: 6px 12px; border-radius: 6px; background: #222; color: #fff; border: 1px solid #444;">
+        <option value="fr/index.html">French</option>
+        <option value="index.html" selected>English</option>
+        <option value="esp/index.html">Spanish</option>
+      </select>
+    </div>
+  </footer>
+
+  <script>
+    function changeLanguage() {
+      const select = document.getElementById("lang-select");
+      const target = select.value;
+      window.location.href = target;
+    }
+  </script>
+</body>
+</html>
